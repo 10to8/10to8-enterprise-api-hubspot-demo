@@ -31,9 +31,6 @@ python -m pip install -r requirements.txt
 Obtain API keys from 10to8 and HubSpot, and put them into `src/config.py`
  * Get your 10to8 Enterprise API key from the [10to8 Enterprise API Key Manager](https://10to8.com/api/enterprise/v2/manage-keys/)
    * Update `src/config.py`: `TTE_ENTERPRISE_API_KEY="yyy"`
- * Get your Hubpsot Developer API key:
-   * See [HubSpot Developer API keys](https://legacydocs.hubspot.com/docs/faq/developer-api-keys)
-    * Update `src/config.py`: `HUBSPOT_DEVELOPER_API_KEY="xxx"
  * Get the API key from your hubspot test account you created earlier - see [HubSpot Account Configuration/Setup](#hubspot-account-configuration) :
    * See [How do I get my hubspot API key](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key)
    * Update `src/config.py`: `HUBSPOT_API_KEY="xxxxxx"
@@ -52,7 +49,10 @@ Obtain API keys from 10to8 and HubSpot, and put them into `src/config.py`
     * Note: If the scopes above are not available:
       * Add `contacts` to your OAuth Scopes for your app
       * Update config.py with HUBSPOT_SCOPES="contacts"
-
+ * Get your Hubpsot Developer API key:
+   * See [HubSpot Developer API keys](https://legacydocs.hubspot.com/docs/faq/developer-api-keys)
+    * Update `src/config.py`: `HUBSPOT_DEVELOPER_API_KEY="xxx"
+ 
 ## Start Flask Server
 Use ngrok to allow your local flask server to be visible to 10to8 and hubspot
  * Start ngrok to obtain your temporary host for your webserver
