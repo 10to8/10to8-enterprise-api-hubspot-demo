@@ -1,0 +1,5 @@
+# requirements.txt
+requests
+Flask
+hubspot-api-client
+py3-validate-email
