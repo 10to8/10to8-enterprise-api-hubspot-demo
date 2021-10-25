@@ -2,7 +2,7 @@
 Example CRM integration for syncing __Contacts__ between [__10to8__](https://10to8.com) and [__HubSpot__](https://www.hubspot.com/) using the [__10to8 Enterprise API.__](https://10to8.com/api/enterprise/v2/)
 
 This demo suppliments the [__10to8 Enterprise API Documentation__](https://10to8.com/api/enterprise/v2/), illustrating how 10to8's Enterprise API can be used to integrate a 3rd Party system.
-* See the [Notes](#notes) for details of some of the known limitations of this demo.
+* See the [Notes](#notes) and [Issues](https://github.com/10to8/10to8-enterprise-api-hubspot-demo/issues) for details of some of the known limitations of this demo.
 
 # Installation
 ## Prerequisites
