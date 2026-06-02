@@ -1,7 +1,7 @@
 # 10to8 Enterprise API HubSpot CRM Demo
-Example CRM integration for syncing __Contacts__ between [__10to8__](https://10to8.com) and [__HubSpot__](https://www.hubspot.com/) using the [__10to8 Enterprise API.__](https://10to8.com/api/enterprise/v2/)
+Example CRM integration for syncing __Contacts__ between [__10to8__](https://app.10to8.com) and [__HubSpot__](https://www.hubspot.com/) using the [__10to8 Enterprise API.__](https://app.10to8.com/api/enterprise/v2/)
 
-This demo suppliments the [__10to8 Enterprise API Documentation__](https://10to8.com/api/enterprise/v2/), illustrating how 10to8's Enterprise API can be used to integrate a 3rd Party system.
+This demo suppliments the [__10to8 Enterprise API Documentation__](https://app.10to8.com/api/enterprise/v2/), illustrating how 10to8's Enterprise API can be used to integrate a 3rd Party system.
 * See the [Notes](#notes) and [Issues](https://github.com/10to8/10to8-enterprise-api-hubspot-demo/issues) for details of some of the known limitations of this demo.
 
 # Installation
@@ -164,7 +164,7 @@ This demo syncs a subset of the fields available on the 10to8 API have been chos
 
 ## Deleting Customers
 * 10to8 provides a means of intervening if a deletion will result in a customer with future bookings being deleted.
-  * https://10to8.com/api/enterprise/v2/#operation/patch-api-enterprise-v2-customer-id
+  * https://app.10to8.com/api/enterprise/v2/#operation/patch-api-enterprise-v2-customer-id
   * For simplicity this demo is not making use of this mechanism - we've disabled the conflict detection with `force=True` on the Customer Delete endpoint.
   * When building your integration you may wish to add a mechanism to handle this situation.
 * We've not integrated with HubSpot's GDPR endpoints, as they are in Beta and subject to change.
@@ -192,7 +192,7 @@ For a production environment, the following may be worth considering:
 
 ### Use async handling or 10to8 will timeout and retry
 * 10to8's Subscription Notification webhooks require a response within 5 seconds.
-  * https://10to8.com/api/enterprise/v2/#tag/Subscriptions
+  * https://app.10to8.com/api/enterprise/v2/#tag/Subscriptions
   * For simplicity, this demo is handling these asynchronously using multiprocessing
   * In a production environment, a task queue such as [Celery](https://docs.celeryproject.org) is recommended.
 
